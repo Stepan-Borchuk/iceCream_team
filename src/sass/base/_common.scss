@@ -18,3 +18,28 @@ img {
   height: auto;
   border: none;
 }
+.wrapp {
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media screen and (max-width: 479px) {
+  .wrapp {
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .wrapp {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .wrapp {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .wrapp {
+    width: 1280px;
+  }
+}
