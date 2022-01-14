@@ -1,6 +1,36 @@
 .gallery {
-  background-color: plum;
+  background-image: linear-gradient(
+     
+  var(--primary-bg-color) 38%,
+  var(--gallery-bg-sec-color) 38%,
+  var(--gallery-bg-sec-color) 62%
+ );
+  // z-index: 1;
+  // position: relative;
+  // height: 100%;
+  width: 100vw;
+  // margin-top: -10%;
+  // margin-bottom: -20px;
+  // display: none;
 }
-.gallery__h1 {
-  color: turquoise;
-}
+.gallery__title {
+  color: var(--header-text-color);
+  position: relative;
+  height: 100%;
+  
+  visibility: hidden;
+
+  }
+
+  .gallery__list {
+    color: rgb(224, 96, 64);
+    position: relative;
+    height: 100%;
+    // transform-origin: top-left;
+    transform: translateY(100%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+
