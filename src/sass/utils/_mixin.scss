@@ -1,4 +1,4 @@
-@mixin font($ff, $fs, $lh, $ta, $tt, $cl) {
+@mixin font-title($ff, $fs, $lh, $ta, $tt, $cl) {
   font-family: $ff;
   font-size: $fs;
   line-height: $lh;

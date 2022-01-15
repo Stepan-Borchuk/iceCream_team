@@ -3,11 +3,18 @@
   padding-top: 121px;
   padding-bottom: 98px;
   &__pre-title {
-    @include font(var(--header-text-family), 18px, 1.16, center, uppercase, var(--primary-color));
+    @include font-title(
+      var(--header-text-family),
+      18px,
+      1.16,
+      center,
+      uppercase,
+      var(--primary-color)
+    );
     margin-bottom: 15px;
   }
   &__title {
-    @include font(
+    @include font-title(
       var(--header-text-family),
       34px,
       1.14,
