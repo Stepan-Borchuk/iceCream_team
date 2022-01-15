@@ -2,7 +2,11 @@
   background-color: var(--gallery-bg-sec-color);
   padding-top: 121px;
   padding-bottom: 98px;
+  &__pre-title {
+    @include pre-title;
+  }
   &__title {
+    @include title;
     margin-bottom: 31px;
   }
 }
