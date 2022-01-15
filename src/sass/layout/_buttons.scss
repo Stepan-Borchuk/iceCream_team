@@ -1,0 +1,139 @@
+.button--products {
+  background: #d41443;
+  border-radius: 20px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 1279px) {
+    width: 63px;
+    height: 24px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 104px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.hero-button--products {
+  background: #ffffff;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  color: #d41443;
+
+  @media screen and (max-width: 1279px) {
+    width: 83px;
+    height: 24px;
+    font-size: 8px;
+    line-height: 10px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 138px;
+    height: 40px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+.hero-button--buy-now {
+  background: #ffffff;
+  border-radius: 20px;
+  align-items: center;
+  text-align: center;
+  font-weight: bold;
+  color: #d41443;
+
+  @media screen and (max-width: 767px) {
+    width: 209px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1279px) {
+    width: 186px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 160px;
+    height: 44px;
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+.hero-button--arrow-right {
+  width: 40px;
+  height: 40px;
+  background-color: #ffffff;
+  border-radius: 50%;
+}
+.button--read-more {
+  width: 176px;
+  height: 44px;
+  background: #ffffff;
+  border-radius: 22px;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (max-width: 767px) {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 21px;
+  }
+}
+.button--our-locations {
+  background-color: #d41342;
+  border-radius: 22px;
+  color: #ffffff;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+
+  @media screen and (max-width: 767px) {
+    width: 161px;
+    height: 44px;
+  }
+  @media screen and (min-width: 768) and (max-width: 1279px) {
+    width: 192px;
+    height: 44px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 198px;
+    height: 44px;
+  }
+}
+.button--franchise {
+  background-color: #ffffff;
+  border-radius: 22px;
+  color: #d41342;
+  align-items: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 21px;
+
+  @media screen and (max-width: 767px) {
+    width: 161px;
+    height: 44px;
+  }
+  @media screen and (min-width: 768) and (max-width: 1279px) {
+    width: 174px;
+    height: 44px;
+  }
+  @media screen and (min-width: 1280px) {
+    width: 180px;
+    height: 44px;
+  }
+}
