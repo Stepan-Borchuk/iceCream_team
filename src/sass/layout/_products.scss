@@ -1,6 +1,82 @@
 .products {
-  background-color: grey;
+  background-color: var(--gallery-bg-sec-color);
 }
-.products__h1 {
-  color: black;
+.products-set {
+  &__container {
+    height: 598px;
+    width: 280px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__wrapp {
+    margin-top: auto;
+
+    background-color: var(--secondary-bg-color);
+    border-radius: 24px;
+    width: 280px;
+    height: 485px;
+  }
+  &__item {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 161px;
+    margin-bottom: 30px;
+    font-family: var(--header-text-family);
+
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--auxiliary-color);
+  }
+  &__text {
+    margin-bottom: 30px;
+
+    font-family: var(--basic-text-famili);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--auxiliary-color);
+
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.products-set__title::before {
+  position: absolute;
+  top: 0;
+
+  content: '';
+  background-position: center;
+  background-size: contain;
+  background-image: url(../images/products-img/card-ing-mob1-2x.png);
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(../images/products-img/card-ing-mob1-1x.png);
+  }
+  width: 249px;
+  height: 252px;
+
+  margin-bottom: 22px;
+}
+.products-set__title::after {
+  content: '. . .';
+
+  margin-top: 25px;
+
+  color: var(--auxiliary-color);
 }
