@@ -2,7 +2,29 @@
   <div class="about__container wrapp">
     <p class="about__pre-title">tradition and love</p>
     <h2 class="about__title">how it’s made?</h2>
-    <div class="about__side-left"></div>
+    <div class="about__side-left">
+      <picture>
+        <source
+          srcset="
+            ./images/about-img/cow-img-deak1x.png 1x,
+            ./images/about-img/cow-img-deak2x.png 2x
+          "
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="
+            ./images/about-img/cow-img-tabl1x.png 1x,
+            ./images/about-img/cow-img-tabl2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
+        <source
+          srcset="./images/about-img/cow-img-mob1x.png 1x, ./images/about-img/cow-img-mob2x.png 2x"
+          media="(min-width: 320px)"
+        />
+        <img src="./images/about-img/cow-img-deak1x.png" alt="Product Designer" />
+      </picture>
+    </div>
     <div class="about__side-right">
       <article class="about__article">
         <p class="about__article-title">
@@ -16,7 +38,7 @@
           <br />
           Aliquam erat volutpat. Aenean accumsan.
         </p>
-        <button type="button" class="about__read-more-btn"></button>
+        <button type="button" class="about__read-more-btn button--read-more">Read more ></button>
       </article>
     </div>
   </div>
