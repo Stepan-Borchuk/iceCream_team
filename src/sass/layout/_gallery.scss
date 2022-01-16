@@ -39,7 +39,8 @@
 
 
   .gallery__item {
-    margin-right: 2px;
+    animation: flipInY;
+    animation-duration: 4s; 
     margin-bottom: 2px;
     &:first-child,
     &:last-child {
@@ -51,6 +52,14 @@
     }
     &:nth-last-child(2) {
       padding-bottom: 30px;
+    }
+    &:active {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: scale(3) translate(-50%, -50%) rotate(0);
+      transition: transform 1000ms;
+      transform-origin: top left;
     }  
     @media screen and (min-width: 768px) {
     margin-right: 4px;
