@@ -4,11 +4,11 @@
  */
 
 // Стили для файла с примером HTML-фрагмента
-@import './base/reset';
 @import './utils/variables';
+@import './base/reset';
 @import './utils/visually-hidden';
-@import './utils/mixin';
 @import './base/common';
+@import './utils/mixin';
 @import './layout/header-hero';
 @import './layout/products';
 @import './layout/about';
@@ -17,3 +17,4 @@
 @import './layout/customer-reviews';
 @import './layout/contacts';
 @import './layout/footer';
+@import './layout/buttons';

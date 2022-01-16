@@ -1,3 +1,4 @@
+
 @mixin font-title($ff, $fs, $lh, $ta, $tt, $cl) {
   font-family: $ff;
   font-size: $fs;
@@ -6,3 +7,12 @@
   text-transform: $tt;
   color: $cl;
 }
+
+@mixin font($ff, $fw, $fs, $lh, $ls) {
+  font-family: $ff;
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+}
+

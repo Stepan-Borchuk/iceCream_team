@@ -1,6 +1,88 @@
 .footer {
-  background-color: purple;
+  display: block;
+
+  padding: 0;
+  background-color: var(--primary-bg-color);
 }
-.footer__h1 {
-  color: turquoise;
+.footer__title {
+  max-width: 232px;
+  padding-bottom: 17px;
+  color: var(--primary-color);
+  @include font(titan one, 500, 18px, 1.17, 0em);
+  text-transform: uppercase;
+}
+
+.footer__title--big-red {
+  width: 200px;
+  padding-bottom: 46px;
+  color: var(--header-text-color);
+  @include font(titan one, 500, 34px, 1.15, 0.04em);
+  text-transform: uppercase;
+}
+
+.footer__links {
+}
+
+.socials {
+  padding-bottom: 42px;
+  display: flex;
+  justify-content: right;
+}
+
+.social + .social {
+  margin-left: 28px;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+
+  color: var(--auxiliary-color);
+  background-color: var(--icon-bg-color);
+
+  transition: color var(--transition-duration-link) var(--timing-function-cubic-bezier),
+    background-color var(--transition-duration-link) var(--timing-function-cubic-bezier);
+  &:hover,
+  &:focus {
+    background-color: var(--header-text-color);
+  }
+}
+
+.social__icon--color-white {
+  fill: var(--auxiliary-color);
+}
+
+.footer__phone-container {
+  padding-bottom: 43px;
+  display: flex;
+  justify-content: right;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.footer_phone-text {
+  padding-right: 5px;
+  color: var(--primary-text-color);
+  @include font(DM Sans, 700, 12px, 1.86, 0);
+}
+
+.footer__phone {
+  color: var(--header-text-color);
+  @include font(DM Sans, 700, 12px, 1.86, 0);
+}
+
+.copy_right {
+  max-width: 150px;
+  margin: 0 auto;
+  padding-top: 22px;
+  padding-bottom: 25px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  text-align: center;
+  color: var(--secondary-text-color);
+  @include font(DM Sans, 700, 14px, 1.52, 0);
 }
