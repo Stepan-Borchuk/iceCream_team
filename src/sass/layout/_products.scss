@@ -1,0 +1,146 @@
+.products {
+  background-color: var(--gallery-bg-sec-color);
+  padding-top: 121px;
+  padding-bottom: 98px;
+  &__pre-title {
+    @include font-title(
+      var(--header-text-family),
+      18px,
+      1.16,
+      center,
+      uppercase,
+      var(--primary-color)
+    );
+    margin-bottom: 15px;
+  }
+  &__title {
+    @include font-title(
+      var(--header-text-family),
+      34px,
+      1.14,
+      center,
+      uppercase,
+      var(--header-text-color)
+    );
+    margin-bottom: 31px;
+    letter-spacing: 0.04em;
+  }
+}
+.products-set {
+  display: flex;
+  flex-direction: column;
+  margin: -8px;
+  &__container {
+    height: 598px;
+    width: 280px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__wrapp {
+    margin-top: auto;
+
+    border-radius: 24px;
+    width: 280px;
+    height: 485px;
+    &--ice-cream {
+      background-color: var(--secondary-bg-color);
+    }
+    &--coffee {
+      background-color: var(--secondary-card-color);
+    }
+    &--milkshake {
+      background-color: var(--another--card-color);
+    }
+  }
+  &__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 8px;
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 150px;
+    margin-bottom: 30px;
+    font-family: var(--header-text-family);
+
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--auxiliary-color);
+    &::before {
+      position: absolute;
+      top: 0;
+
+      content: '';
+      background-position: center;
+      background-size: contain;
+
+      width: 249px;
+      height: 252px;
+
+      margin-bottom: 22px;
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+
+    font-family: var(--basic-text-famili);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--auxiliary-color);
+
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.products-set__title {
+  &--ice-cream::before {
+    background-image: url(../images/products-img/card-ing-mob1-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-img/card-ing-mob1-2x.png);
+    }
+  }
+  &--coffee::before {
+    background-image: url(../images/products-img/card-ing-mob2-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-img/card-ing-mob2-2x.png);
+    }
+  }
+  &--milkshake::before {
+    background-image: url(../images/products-img/card-ing-mob3-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-img/card-ing-mob3-2x.png);
+    }
+  }
+}
+.products-set__title::after {
+  content: '. . .';
+
+  margin-top: 25px;
+
+  color: var(--auxiliary-color);
+}
