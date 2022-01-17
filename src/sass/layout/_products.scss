@@ -1,6 +1,276 @@
 .products {
-  background-color: grey;
+  // background-color: var(--auxiliary-color);
+
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
+  &__pre-title {
+    margin-bottom: 15px;
+    @include font-title(
+      var(--header-text-family),
+      18px,
+      1.16,
+      center,
+      uppercase,
+      var(--primary-color)
+    );
+
+    @media screen and (min-width: 768px) {
+      @include font-title(
+        var(--header-text-family),
+        26px,
+        1.15,
+        center,
+        uppercase,
+        var(--primary-color)
+      );
+    }
+    @media screen and (min-width: 1280px) {
+      @include font-title(
+        var(--header-text-family),
+        30px,
+        1.13,
+        center,
+        uppercase,
+        var(--primary-color)
+      );
+      letter-spacing: 0.04em;
+    }
+  }
+  &__title {
+    @include font-title(
+      var(--header-text-family),
+      34px,
+      1.14,
+      center,
+      uppercase,
+      var(--header-text-color)
+    );
+    margin-bottom: 31px;
+    letter-spacing: 0.04em;
+    @media screen and (min-width: 768px) {
+      @include font-title(
+        var(--header-text-family),
+        48px,
+        1.145,
+        center,
+        uppercase,
+        var(--header-text-color)
+      );
+      margin-bottom: 39px;
+      letter-spacing: 0.04em;
+    }
+    @media screen and (min-width: 1280px) {
+      @include font-title(
+        var(--header-text-family),
+        58px,
+        1.14,
+        center,
+        uppercase,
+        var(--header-text-color)
+      );
+    }
+  }
 }
-.products__h1 {
-  color: black;
+.products-set {
+  display: flex;
+  flex-direction: column;
+  margin: -8px;
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    margin: -10px;
+  }
+
+  &__container {
+    height: 598px;
+    width: 280px;
+    display: flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1280px) {
+      height: 735px;
+    }
+
+    @media screen and (min-width: 768px) {
+      width: 220px;
+    }
+    @media screen and (min-width: 1280px) {
+      width: 329px;
+    }
+  }
+  &__wrapp {
+    margin-top: auto;
+
+    border-radius: 24px;
+    width: 100%;
+    height: 485px;
+    @media screen and (min-width: 1280px) {
+      height: 525px;
+    }
+
+    &--ice-cream {
+      background-color: var(--secondary-bg-color);
+    }
+    &--coffee {
+      background-color: var(--secondary-card-color);
+    }
+    &--milkshake {
+      background-color: var(--another--card-color);
+    }
+  }
+  &__item {
+    margin-left: auto;
+    margin-right: auto;
+    margin: 10px;
+    @media screen and (max-width: 767px) {
+      margin: 8px;
+    }
+  }
+  &__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    padding-top: 150px;
+    margin-bottom: 30px;
+    font-family: var(--header-text-family);
+
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+
+    color: var(--auxiliary-color);
+    @media screen and (min-width: 1280px) {
+      font-size: 30px;
+      line-height: 1.13;
+    }
+    &::before {
+      position: absolute;
+      top: 0;
+
+      content: '';
+      background-position: center;
+      background-size: contain;
+      background-repeat: no-repeat;
+
+      width: 249px;
+      height: 252px;
+      @media screen and (min-width: 768px) {
+        width: 220px;
+        height: 224px;
+      }
+      @media screen and (min-width: 1280px) {
+        width: 335px;
+        height: 335px;
+      }
+    }
+  }
+  &__text {
+    margin-bottom: 30px;
+
+    font-family: var(--basic-text-famili);
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.52;
+    text-align: center;
+    letter-spacing: 0.04em;
+
+    color: var(--auxiliary-color);
+
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 768px) {
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1280px) {
+      font-size: 16px;
+      width: 241px;
+      margin-bottom: 62px;
+    }
+  }
+  &__btn {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+.products-set__title {
+  &--ice-cream::before {
+    background-image: url(../images/products-img/card-ing-mob1-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-img/card-ing-mob1-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-img/card-ing-tabl1-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-img/card-ing-tabl1-2x.png);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/products-img/card-ing-desk1-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-img/card-ing-desk1-2x.png);
+      }
+    }
+  }
+  &--coffee::before {
+    background-image: url(../images/products-img/card-ing-mob2-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-img/card-ing-mob2-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-img/card-ing-tabl2-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-img/card-ing-tabl2-2x.png);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/products-img/card-ing-desk2-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-img/card-ing-desk2-2x.png);
+      }
+    }
+  }
+  &--milkshake::before {
+    background-image: url(../images/products-img/card-ing-mob3-1x.png);
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: url(../images/products-img/card-ing-mob3-2x.png);
+    }
+    @media screen and (min-width: 768px) {
+      background-image: url(../images/products-img/card-ing-tabl3-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-img/card-ing-tabl3-2x.png);
+      }
+    }
+    @media screen and (min-width: 1280px) {
+      background-image: url(../images/products-img/card-ing-desk3-1x.png);
+      @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        background-image: url(../images/products-img/card-ing-desk3-2x.png);
+      }
+    }
+  }
+}
+.products-set__title::after {
+  content: '. . .';
+
+  margin-top: 25px;
+
+  color: var(--auxiliary-color);
 }
