@@ -198,7 +198,7 @@
         />
       </picture> 
     </li>
-    <li class="gallery__item" data-modal-open> 
+    <li class="gallery__item"> 
       <picture>
         <source
           srcset="./images/gallery-img/desk_img_9-1x.jpg 1x, 
@@ -255,14 +255,15 @@
   <div class="backdrop is-hidden">
     <div class="gallery__viev">
       <button type="button" class="gallery-close__btn">
-       x
+        <svg class="gallery-close__icon" width="30" height="30">
+          <use href="../src/images/icons.svg#icon-close"></use>
         </svg>
       </button>
       <div class="gallery-viev__list">
-        <!-- <div class="gallery-viev__image">
+        <div class="gallery-viev__image">
         <img src="./images/gallery-img/img_1.jpg"/>
         </div>
-        <div class="gallery-viev__image">
+        <!-- <div class="gallery-viev__image">
             <img src="./images/gallery-img/img_2.jpg"/>
         </div>
         <div class="gallery-viev__image">
@@ -279,8 +280,7 @@
         </div>
         <div class="gallery-viev__image">
           <img src="./images/gallery-img/img_7.jpg"/>
-        </div>  -->
-
+        </div> -->
       </div>
   </div>  
 </div> 
