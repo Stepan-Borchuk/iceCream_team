@@ -83,6 +83,11 @@
   align-items: center;
   text-align: center;
 
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
+
   @media screen and (max-width: 767px) {
     font-size: 14px;
     line-height: 18px;
