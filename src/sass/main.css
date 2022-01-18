@@ -1226,6 +1226,8 @@ button {
 
 .about__container {
   padding-top: 125px;
+  padding-left: 50px;
+  padding-right: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -1352,7 +1354,7 @@ button {
 
 .about__side-right {
   font-family: var(--basic-text-famili);
-  width: 220px;
+  width: 100%;
   margin: 46px auto 0 auto;
 }
 
@@ -1374,7 +1376,7 @@ button {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.62;
-  color: #000000;
+  color: var(--primary-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1396,7 +1398,7 @@ button {
   font-size: 12px;
   line-height: 1.62;
   margin-top: 17px;
-  color: #907e82;
+  color: var(--secondary-text-color);
 }
 
 @media screen and (min-width: 768px) {
@@ -1438,25 +1440,62 @@ button {
 }
 
 .read-more {
-  width: 50vw;
-  height: 100vh;
+  width: 80vw;
+  height: 80vh;
+  padding: 20px 20px 20px 40px;
   background-color: white;
+  border: 2px solid var(--primary-color);
+  border-radius: 24px;
   position: fixed;
-  top: 0;
-  left: 50%;
+  top: 10%;
+  left: 10%;
   z-index: 12;
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  padding-top: 10px;
-  padding-bottom: 48px;
+  -webkit-transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 300ms cubic-bezier(0.4, 0, 0.2, 1), visibility 300ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 768px) {
+  .read-more {
+    width: 48vw;
+    height: 90vh;
+    padding: 10px 10px 10px 30px;
+    top: 5%;
+    left: 50%;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .read-more {
+    height: 80vh;
+    padding: 40px 40px 40px 60px;
+    top: 10%;
+    left: 50%;
+  }
 }
 
 .read-more__close-btn {
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   margin-left: auto;
+  margin-bottom: 15px;
+  color: var(--primary-color);
   background-color: transparent;
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid var(--primary-color);
+  border-radius: 50%;
+}
+
+.read-more__icon-close {
+  fill: inherit;
+  margin-left: 3px;
 }
 
 .advantages {
@@ -1854,7 +1893,7 @@ button {
 
 .customer {
   height: 100%;
-  margin-bottom: 86px;
+  padding-bottom: 86px;
 }
 
 .content {
@@ -1885,7 +1924,7 @@ ul.splide__pagination {
   position: relative;
 }
 
-.customer-wrapp img {
+.customer-foto {
   display: block;
   margin-left: auto;
   margin-right: auto;
