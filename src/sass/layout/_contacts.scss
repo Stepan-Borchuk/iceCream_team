@@ -12,6 +12,13 @@
       var(--primary-bg-color) 63%
     );
   }
+  @media screen and (min-width: 1280px) {
+    background-image: linear-gradient(
+      var(--auxiliary-color) 14%,
+      var(--primary-bg-color) 7%,
+      var(--primary-bg-color) 63%
+    );
+  }
 }
 .contacts__h2 {
   color: turquoise;
@@ -34,7 +41,7 @@
   margin-left: auto;
   margin-right: auto;
   padding: 43px 20px;
-  width: 220px;
+  max-width: 480px;
   background-color: var(--auxiliary-color);
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
   border-radius: 24px;
