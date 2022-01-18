@@ -54,6 +54,9 @@
     background-color: var(--hover-button-color);
   }
 }
+// .menu__icon {
+//   margin-left: 27px;
+// }
 .hero__circle {
   border-radius: 50%;
   background-color: var(--primary-color);
@@ -77,13 +80,22 @@
   line-height: 1;
   color: var(--header-text-color);
 }
+.button__list {
+  display: flex;
+}
+
+.button__link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+}
 .button__products {
   height: 24px;
   border-radius: 20px;
   background-color: var(--header-text-color);
   color: var(--auxiliary-color);
   line-height: 10px;
-  margin-right: 8px;
 }
 .button__made {
   height: 24px;
@@ -105,6 +117,9 @@
   }
   .menu__button__buy {
     display: none;
+  }
+  .menu__icon {
+    margin-left: 27px;
   }
   .hero__circle {
     width: 346px;
@@ -144,10 +159,27 @@
     top: 193px;
     left: 20px;
   }
-
+  .menu__icon {
+    margin-left: 13px;
+  }
   .description__wrapper {
     display: flex;
     position: absolute;
+    overflow: hidden;
+  }
+  .description__img {
+    transform: scale(0);
+  }
+  .ready .description__img {
+    animation: 1000ms cubic-bezier(1, 1, 0, 0) 500ms forwards scaleUp;
+  }
+  @keyframes scaleUp {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(100%);
+    }
   }
   .description__box {
     display: flex;
@@ -168,6 +200,18 @@
     position: absolute;
     bottom: 0;
     right: 34px;
+    transform: translateY(100%);
+  }
+  .ready .tagline__img {
+    animation: 1000ms cubic-bezier(1, 1, 0, 0) forwards fadeUp;
+  }
+  @keyframes fadeUp {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(0);
+    }
   }
   .info__wrapper {
     position: absolute;
@@ -178,10 +222,6 @@
       position: absolute;
       display: inline-block;
       content: '';
-      width: 16px;
-      height: 16px;
-      top: 0;
-      right: 0;
       border-radius: 50%;
       background-color: var(--auxiliary-color);
     }
@@ -189,10 +229,6 @@
       position: absolute;
       display: inline-block;
       content: '';
-      width: 16px;
-      height: 16px;
-      bottom: 28px;
-      right: 0;
       border-radius: 50%;
       background-color: var(--auxiliary-color);
       z-index: -1;
@@ -222,9 +258,15 @@
   .header__logo {
     margin-right: 291px;
   }
+  .menu__icon {
+    margin-left: 21px;
+  }
   .menu__button__buy {
     margin: 0;
     width: 160px;
+    & .menu__icon {
+      margin-left: 13px;
+    }
   }
   .hero__conteiner {
     height: 313px;
@@ -292,6 +334,18 @@
     line-height: 1.2;
   }
 }
+.info__wrapper::before {
+  width: 16px;
+  height: 16px;
+  top: 0pc;
+  right: 0;
+}
+.info__wrapper::after {
+  width: 16px;
+  height: 16px;
+  top: 55px;
+  right: 0;
+}
 @media screen and (max-width: 1279px) {
   .icon {
     width: 20px;
@@ -300,15 +354,17 @@
   .menu__container {
     position: fixed;
     top: -6px;
-    right: 0px;
+    right: 0;
     width: 250px;
-    height: 100vh;
+    height: 101vh;
     padding-top: 60px;
     background: var(--menu-mob-color);
     z-index: 999;
-    display: none;
+    transform: translateX(250px);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     &.is-open {
-      display: flex;
+      transform: translateX(0px);
+      transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
     }
     & .menu__toggle {
       position: absolute;
@@ -329,10 +385,6 @@
     flex-direction: column;
     align-items: center;
   }
-
-  .menu__icon {
-    margin-left: 27px;
-  }
   .menu__item {
     display: inline-block;
     width: 100%;
@@ -348,6 +400,9 @@
     font-size: 14px;
     line-height: 1.2;
   }
+}
+.button__item:first-child {
+  margin-right: 8px;
 }
 .button__products {
   width: 62px;
@@ -395,6 +450,9 @@
   .master {
     font-size: 58px;
   }
+  .button__item:first-child {
+    margin-right: 15px;
+  }
   .button__products {
     width: 104px;
     height: 40px;
@@ -406,6 +464,7 @@
     font-size: 14px;
   }
   .description__wrapper {
+    left: 77px;
     bottom: 45px;
   }
   .description__img {
@@ -441,7 +500,7 @@
   .info__wrapper {
     height: 168px;
     top: 156px;
-    right: 115px;
+    right: 97px;
   }
   .info__number {
     padding-right: 18px;
@@ -458,5 +517,17 @@
     font-weight: 400;
     font-size: 14px;
     line-height: 1.2;
+  }
+  .info__wrapper::before {
+    width: 30px;
+    height: 30px;
+    top: 0pc;
+    right: 0;
+  }
+  .info__wrapper::after {
+    width: 30px;
+    height: 30px;
+    top: 95px;
+    right: 0;
   }
 }
