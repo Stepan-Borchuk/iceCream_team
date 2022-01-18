@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" id="home">
   <div class="header__wrapper wrapp">
     <div class="header__conteiner">
       <a href="index.html" class="header__logo" alt="logo">
@@ -17,11 +17,11 @@
             </svg>
           </button>
           <ul class="menu list">
-            <li class="menu__item"><a class="menu__link link" href="">Home</a></li>
-            <li class="menu__item"><a class="menu__link link" href="">About us</a></li>
-            <li class="menu__item"><a class="menu__link link" href="">How it’s made?</a></li>
-            <li class="menu__item"><a class="menu__link link" href="">Our products</a></li>
-            <li class="menu__item"><a class="menu__link link" href="">Contact</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#home">Home</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#advantages">About us</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#about">How it’s made?</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#products">Our products</a></li>
+            <li class="menu__item"><a class="menu__link link" href="#contacts">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -30,7 +30,7 @@
           <use href="./images/hero-img/symbol-defs.svg#icon-Burger"></use>
         </svg>
       </button>
-      <button class="menu__button__buy" type="button">Buy now
+      <button class="menu__button__buy" type="button" modal--buynow-open>Buy now
         <svg class="menu__icon" width="7" height="10">
           <use href="./images/hero-img/symbol-defs.svg#icon-arrow"></use>
         </svg>
@@ -52,8 +52,10 @@
           made with
           <span class="master">passion</span>
         </h1>
-        <button type="button" class="button__products">Products</button>
-        <button type="button" class="button__made">How it’s made?</button>
+        <ul class="button__list list">
+          <li class="button__item"><a class="button__link button__products" href="#products" alt="Products">Products</a></li>
+          <li class="button__item"><a class="button__link button__made" href="#about" alt="How it’s made?">How it’s made?</a></li>
+        </ul>
       </div>
       <div class="description__wrapper">
         <picture class="description__img">
