@@ -1,61 +1,81 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Заголовок страницы</title>
+    <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon" />
+    <link type="Image/x-icon" href="./images/favicon.ico" rel="icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet" />
+    <!-- Additional task: galery viev: Slick-slider gallery -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <!-- Additional task: galery viev: Load anination gallery -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+      integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
+      crossorigin="anonymous"
+    />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Заголовок страницы</title>
-  <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon">
-  <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet" />
-  <!-- Additional task: galery viev: Slick-slider gallery -->
-  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-  <!-- Additional task: galery viev: Load anination gallery -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    integrity="sha512-ISS7cAi1PEhQ8jnbJpJZMd29NlhNj4AWYyLOSp2CE/CsHxTCu+r+t0D2yoJudVrd0/8fTVPUVDzY5Tvli75u/g=="
-    crossorigin="anonymous" />
+  <body>
+    <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
 
+    <include src="./partials/header-hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-buynow.html"></include>
+    <include src="./partials/modal-ourlocation.html"></include>
+    <include src="./partials/modal-franchise.html"></include>
+    <!-- Additional task: galery viev -->
+    <include src="./partials/gallery-viev.html"></include>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./index.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/js/splide.min.js"
+    ></script>
+    <script defer src="js/customer-reviews.js"></script>
+    <script src="./js/modal-buynow.js"></script>
+    <script src="./js/read-more.js"></script>
+    <script src="./js/modal-franchise.js"></script>
+    <script src="./js/modal-ourlocation.js"></script>
 
-</head>
-
-<body>
-  <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
-
-  <include src="./partials/header-hero.html"></include>
-  <include src="./partials/products.html"></include>
-  <include src="./partials/about.html"></include>
-  <include src="./partials/advantages.html"></include>
-  <include src="./partials/gallery.html"></include>
-  <include src="./partials/customer-reviews.html"></include>
-  <include src="./partials/contacts.html"></include>
-  <include src="./partials/footer.html"></include>
-  <include src="./partials/modal-buynow.html"></include>
-  <include src="./partials/modal-ourlocation.html"></include>
-  <include src="./partials/modal-franchise.html"></include>
-  <!-- Additional task: galery viev -->
-  <include src="./partials/gallery-viev.html"></include>
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
-  <script src="./index.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/js/splide.min.js"></script>
-  <script defer src="js/customer-reviews.js"></script>
-  <script src="./js/modal-buynow.js"></script>
-  <script src="./js/read-more.js"></script>
-  <script src="./js/modal-franchise.js"></script>
-  <script src="./js/modal-ourlocation.js"></script>
-
-  <!-- Additional task: galery viev: Slick-slider gallery -->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
-    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js">
-  </script>
-  <script src="./js/gallery-viev.js"></script>
-  <script src="./js/gallery-slick.js"></script>
-</body>
-
+    <!-- Additional task: galery viev: Slick-slider gallery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="./js/gallery-viev.js"></script>
+    <script src="./js/gallery-slick.js"></script>
+  </body>
 </html>
