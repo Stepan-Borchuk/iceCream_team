@@ -44,6 +44,7 @@
 }
 .advantages__name {
     font-family: var(--header-text-family);
+    background-color: var(--header-text-color);
     font-weight: 400;
     font-size: 36px;
     line-height: 1.14;
@@ -59,9 +60,56 @@
     @media screen and (min-width:1200px) {
         font-size: 58px;
     }
-    
+    position: relative;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;  
 }
-
+.title_one::before{
+    content: "271";
+    background: linear-gradient(var(--secondary-bg-color), var(--menu-mob-color));
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    width: 0;
+    transition: all 1s ease-in-out;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.title_two::before {
+    content: "16kg";
+    background: linear-gradient(var(--secondary-bg-color), var(--menu-mob-color));
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    width: 0;
+    transition: all 1s ease-in-out;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.title_three::before {
+    content: "84";
+    background: linear-gradient(var(--secondary-bg-color), var(--menu-mob-color));
+    position: absolute;
+    top: 0;
+    bottom: 0; 
+    left: 0;
+    right: 0;
+    width: 0;
+    transition: all 1s ease-in-out;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.advantages__name:hover::before {
+    width: 100%;
+}
 .advantages_text {
     font-family: var(--basic-text-famili);
     font-weight: 700;
@@ -95,6 +143,7 @@
     @media screen and (min-width:1200px) {
         margin-bottom: 40px;
     }
+    animation: rotateY 4000ms infinite alternate backwards ease 2000ms;
 }
 .block-2::before {
     content: " ";
@@ -112,6 +161,7 @@
     @media screen and (min-width:1200px) {
         margin-bottom: 40px;
     }
+    animation: rotateY 4000ms infinite alternate backwards ease 2000ms;
 }
 .block-3::before {
     content: " ";
@@ -129,4 +179,14 @@
     @media screen and (min-width:1200px) {
         margin-bottom: 40px;
     }
+    animation: rotateY 4000ms infinite alternate backwards ease 2000ms;
+}
+@keyframes rotateY {
+  0% {
+    transform: perspective(400px) rotateY(40deg);
+  }
+
+  100% {
+    transform: perspective(400px) rotateY(-40deg);
+  }
 }

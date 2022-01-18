@@ -10,8 +10,7 @@
  }
 
 
-
- .gallery__title {
+.gallery__title {
   color: var(--header-text-color);
   display: none;
   }
@@ -24,7 +23,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
-	margin-right: -2px;
+    margin-right: -2px;
     margin-bottom: -2px;
     @media screen and (min-width: 768px) {
       height: 278px;
@@ -42,7 +41,6 @@
   .gallery__item {
     animation: flipInY;
     animation-duration: 4s; 
-	margin-right: 2px;
     margin-bottom: 2px;
     &:first-child,
     &:last-child {
@@ -84,4 +82,4 @@
    }
  
    
-  
+

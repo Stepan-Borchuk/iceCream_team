@@ -90,19 +90,17 @@
 
   &__container {
     height: 598px;
-    width: 280px;
+
     display: flex;
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    @media screen and (min-width: 1280px) {
-      height: 735px;
-    }
 
     @media screen and (min-width: 768px) {
       width: 220px;
     }
     @media screen and (min-width: 1280px) {
+      height: 735px;
       width: 329px;
     }
   }
@@ -112,8 +110,14 @@
     border-radius: 24px;
     width: 100%;
     height: 485px;
+    padding: 0 40px;
+
+    @media screen and (min-width: 768px) {
+      padding: 0 11px;
+    }
     @media screen and (min-width: 1280px) {
       height: 525px;
+      padding: 0 44px;
     }
 
     &--ice-cream {
@@ -188,15 +192,15 @@
 
     color: var(--auxiliary-color);
 
-    width: 200px;
     margin-left: auto;
     margin-right: auto;
+
     @media screen and (min-width: 768px) {
       margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
-      width: 241px;
+
       margin-bottom: 62px;
     }
   }
