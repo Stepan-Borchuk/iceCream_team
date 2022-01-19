@@ -112,6 +112,8 @@
     width: 100%;
     height: 485px;
     padding: 0 40px;
+    display: flex;
+    flex-direction: column;
 
     @media screen and (min-width: 768px) {
       padding: 0 11px;
@@ -182,8 +184,6 @@
     }
   }
   &__text {
-    margin-bottom: 30px;
-
     font-family: var(--basic-text-famili);
     font-weight: 700;
     font-size: 14px;
@@ -197,12 +197,9 @@
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-      margin-bottom: 40px;
     }
     @media screen and (min-width: 1280px) {
       font-size: 16px;
-
-      margin-bottom: 62px;
     }
   }
   &__btn {
@@ -215,16 +212,13 @@
 
     margin-left: auto;
     margin-right: auto;
+    margin-top: auto;
+    margin-bottom: 40px;
+    @media screen and (min-width: 1280px) {
+      margin-bottom: 50px;
+    }
     &--close {
-      border-radius: 50%;
-      display: flex;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: auto;
-      margin-bottom: 40px;
-      @media screen and (min-width: 1280px) {
-        margin-bottom: 50px;
-      }
+      transform: rotateY(180deg);
     }
   }
   &__icon {
