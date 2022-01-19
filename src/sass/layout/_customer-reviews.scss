@@ -14,7 +14,7 @@ button.splide__pagination__page {
   margin: 35px 9px 0; 
 }
 button.splide__pagination__page.is-active {
-  background: url('/images/customer-img/Vector\ \(2\).svg');
+  background: url('/images/customer-img/house.svg');
   border-radius: unset;
   width: 12px;
   height: 12px;
@@ -28,8 +28,8 @@ ul.splide__pagination {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 80px;
-  margin-bottom: 29px;
+  padding-top: 80px;
+  padding-bottom: 29px;
 }
 
 .slider-text-wrapper::before {
@@ -41,7 +41,7 @@ ul.splide__pagination {
   position: absolute;
 }
 .slider-text-wrapper::before {
-  background-image: url('/images/customer-img/“\ \(1\).svg');
+  background-image: url('/images/customer-img/“.svg');
 }
 .customer-wrapp::after {
   content: '';
@@ -56,7 +56,7 @@ ul.splide__pagination {
   background-repeat: no-repeat;
 }
 .customer-wrapp::after {
-  background-image: url('/images/customer-img/Group\ 8\ \(1\).svg');
+  background-image: url('/images/customer-img/three-dots.svg');
 }
 
 .splide__arrows {
