@@ -37,6 +37,8 @@
   &__item {
     animation: flipInY;
     animation-duration: 4s; 
+    transition-property: transform;
+    transition-duration: 1000ms;
     margin-bottom: 2px;
     &:first-child,
     &:last-child {
@@ -52,7 +54,7 @@
     &:hover {
       position: relative;
       transform: scale(2);
-      transition: transform 1000ms;
+      // transition: transform 1000ms;
       transform-origin: center;
     }  
     @media screen and (min-width: 768px) {
