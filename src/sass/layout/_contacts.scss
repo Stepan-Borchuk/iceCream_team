@@ -229,6 +229,8 @@
   background-color: var(--header-text-color);
   color: var(--auxiliary-color);
   @include font(var(--basic-text-famili), 700, 16px, 1.3, 0);
+  transition: color 250ms linear, background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--hover-redbutton-color);
@@ -253,7 +255,8 @@
   background-color: var(--auxiliary-color);
   color: var(--header-text-color);
   @include font(var(--basic-text-famili), 700, 16px, 1.3, 0);
-
+  transition: color 250ms linear, background-color 250ms linear;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
     background-color: var(--button-color-hover);
