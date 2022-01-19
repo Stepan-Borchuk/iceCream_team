@@ -100,33 +100,31 @@
   border-radius: 50%;
   cursor: pointer;
 
-  transition-property: width, height;
+  transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    width: 33px;
-    height: 33px;
+    background: #ffffff;
   }
 }
 .modal__modal-button-icon {
   position: absolute;
   top: 1px;
   right: 5px;
-  width: 15px;
-  height: 15px;
+  width: 18px;
+  height: 18px;
   margin-top: 5px;
   fill: #ffffff;
 
-  transition-property: width, height;
+  transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    width: 18px;
-    height: 18px;
+    fill: #d41443;
   }
 }
 .modal__input-radio {
@@ -156,13 +154,12 @@
   color: #ffffff;
   cursor: pointer;
 
-  transition-property: width, height;
+  transition-property: background-color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover,
   &:focus {
-    width: 160px;
-    height: 55px;
+    background-color: #ffffff;
   }
 }
