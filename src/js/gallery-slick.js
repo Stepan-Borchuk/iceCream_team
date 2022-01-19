@@ -19,11 +19,11 @@ $(document).ready(function(){
         // автоматична зміна слайдів
         autoplay:true,
         // швидкість автоматичної зміни слайдів
-        autoplaySpeed:2000,
+        autoplaySpeed:5000,
         // зупинити автоматичну зміну слайдів при ховері
-        pauseOnHover:true,
+        pauseOnHover:false,
         // зупинити автоматичну зміну слайдів при фокусі
-        pauseOnFocus:true,
+        pauseOnFocus:false,
         // зупинити автоматичну зміну слайдів при фокусі на крапку
         pauseOnDotsHover:false,
         // прокручування мишкою
