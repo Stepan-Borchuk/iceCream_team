@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>IceCream</title>
     <link type="image/x-icon" href="./images/favicon.ico" rel="shortcut icon">
     <link type="Image/x-icon" href="./images/favicon.ico" rel="icon">
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -33,34 +35,33 @@
   <body>
     <!-- Так добавляются фрагменты в главные HTML-файлы страниц. -->
 
-  <include src="./partials/header-hero.html"></include>
-  <include src="./partials/products.html"></include>
-  <include src="./partials/about.html"></include>
-  <include src="./partials/advantages.html"></include>
-  <include src="./partials/gallery.html"></include>
-  <include src="./partials/customer-reviews.html"></include>
-  <include src="./partials/contacts.html"></include>
-  <include src="./partials/footer.html"></include>
-  <include src="./partials/modal-buynow.html"></include>
-  <include src="./partials/modal-ourlocation.html"></include>
-  <include src="./partials/modal-franchise.html"></include>
-  <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      document.body.classList.add('ready');
-    });
-  </script>
-  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-    crossorigin="anonymous"></script>
-  <script defer src="js/mobile-menu.js"></script>
-  <script src="./index.js"></script>
-  <script defer src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/js/splide.min.js"></script>
-   <!-- gallery-viev (add Stepan B) -->
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <script src="./js/gallery-viev.js"></script>
-
+    <include src="./partials/header-hero.html"></include>
+    <include src="./partials/products.html"></include>
+    <include src="./partials/about.html"></include>
+    <include src="./partials/advantages.html"></include>
+    <include src="./partials/gallery.html"></include>
+    <include src="./partials/customer-reviews.html"></include>
+    <include src="./partials/contacts.html"></include>
+    <include src="./partials/footer.html"></include>
+    <include src="./partials/modal-buynow.html"></include>
+    <include src="./partials/modal-ourlocation.html"></include>
+    <include src="./partials/modal-franchise.html"></include>
+    <!-- Additional task: galery viev -->
+    <include src="./partials/gallery-viev.html"></include>
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
+    <script src="./index.js"></script>
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/@splidejs/splide@2.3.1/dist/js/splide.min.js"
+    ></script>
+    <script defer src="js/customer-reviews.js"></script>
     <script src="./js/modal-buynow.js"></script>
     <script src="./js/read-more.js"></script>
     <script src="./js/modal-franchise.js"></script>
