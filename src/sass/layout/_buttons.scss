@@ -142,3 +142,28 @@
     height: 44px;
   }
 }
+.upbutton {
+  position: fixed;
+  bottom: 150px;
+  right: 50px;
+  width: 60px;
+  height: 60px;
+  font-size: 45px;
+  background-color: #d41443;
+  color: #fff;
+  border-color: transparent;
+  border-radius: 50%;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  opacity: 0.5;
+
+  @media screen and (max-width: 767px) {
+    width: 40px;
+    height: 40px;
+    font-size: 30px;
+    right: 10px;
+  }
+}
+.upbutton:hover {
+  opacity: 0.8;
+}
