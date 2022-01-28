@@ -21,9 +21,9 @@ $(document).ready(function(){
         // швидкість автоматичної зміни слайдів
         autoplaySpeed:5000,
         // зупинити автоматичну зміну слайдів при ховері
-        pauseOnHover:false,
+        pauseOnHover:true,
         // зупинити автоматичну зміну слайдів при фокусі
-        pauseOnFocus:false,
+        pauseOnFocus:true,
         // зупинити автоматичну зміну слайдів при фокусі на крапку
         pauseOnDotsHover:false,
         // прокручування мишкою
